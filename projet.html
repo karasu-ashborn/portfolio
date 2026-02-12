@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets | Boubacar Coulibaly</title>
+  <meta name="description" content="Projets de Boubacar Coulibaly — BTS SIO SISR." />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <span class="brand-mark">BC</span>
+        <span class="brand-text">Boubacar Coulibaly</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav-link" href="index.html">Accueil</a>
+        <a class="nav-link is-active" href="projet.html">Projets</a>
+        <a class="nav-link" href="tableau de competances.html">Compétences</a>
+        <a class="nav-link" href="stage.html">Stage</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="contact.html">Travaillons ensemble</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="kicker">Mes réalisations</p>
+        <h1 class="hero-title">
+          Projets &<br />
+          <span class="accent">Infrastructure</span>
+        </h1>
+        <p class="hero-subtitle">
+          Découvrez mes projets en administration systèmes, réseaux, cybersécurité et conteneurisation.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJETS DÉTAILLÉS -->
+    <section class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Mes projets techniques</h2>
+        <p class="section-subtitle">
+          Projets concrets réalisés en environnement Debian/Linux, orientés production et bonnes pratiques.
+        </p>
+
+        <!-- Projet 1 : Infrastructure Docker -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon">DCK</div>
+            <div class="project-title-block">
+              <h3>Infrastructure Docker avec Docker Compose</h3>
+              <span class="project-status">Production</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4>Objectif du projet</h4>
+              <p>Déployer une infrastructure conteneurisée complète sur un serveur Debian pour héberger plusieurs services avec isolation réseau, reverse proxy et gestion des permissions. Architecture modulaire et reproductible avec Docker Compose.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Description</h4>
+              <p>Mise en place d'une stack Docker Compose multi-services comprenant :</p>
+              <ul class="project-list">
+                <li>Configuration de plusieurs conteneurs avec docker-compose.yml</li>
+                <li>Reverse proxy Nginx pour le routage HTTP/HTTPS</li>
+                <li>Gestion des volumes pour la persistance des données</li>
+                <li>Réseau bridge personnalisé pour l'isolation</li>
+                <li>Gestion des permissions avec PUID/PGID pour éviter les conflits</li>
+                <li>Logs centralisés et monitoring des conteneurs</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4>Technologies utilisées</h4>
+              <div class="tech-grid">
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Docker Compose</span>
+                <span class="tech-badge">Nginx</span>
+                <span class="tech-badge">Debian</span>
+                <span class="tech-badge">Volumes</span>
+                <span class="tech-badge">Networks</span>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <h4>Compétences développées</h4>
+              <div class="tags">
+                <span>Conteneurisation</span>
+                <span>Orchestration</span>
+                <span>Reverse Proxy</span>
+                <span>Gestion volumes</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 : Pi-hole sur NAS -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon">DNS</div>
+            <div class="project-title-block">
+              <h3>Pi-hole sur NAS avec réseau Macvlan</h3>
+              <span class="project-status">Production</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4>Objectif du projet</h4>
+              <p>Déployer Pi-hole comme serveur DNS de filtrage publicitaire et trackers sur un NAS, avec une adresse IP dédiée sur le réseau local via Macvlan pour permettre à tous les périphériques du réseau d'en bénéficier.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Description</h4>
+              <p>Installation de Pi-hole en conteneur Docker avec configuration réseau avancée :</p>
+              <ul class="project-list">
+                <li>Déploiement Docker de Pi-hole sur NAS Synology/QNAP</li>
+                <li>Configuration réseau Macvlan pour IP dédiée (ex: 192.168.1.200)</li>
+                <li>Paramétrage DNS pour tout le réseau domestique</li>
+                <li>Blocage publicités, trackers et domaines malveillants</li>
+                <li>Dashboard de monitoring en temps réel</li>
+                <li>Listes de blocage personnalisées</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4>Technologies utilisées</h4>
+              <div class="tech-grid">
+                <span class="tech-badge">Pi-hole</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Macvlan</span>
+                <span class="tech-badge">DNS</span>
+                <span class="tech-badge">NAS</span>
+                <span class="tech-badge">dnsmasq</span>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <h4>Compétences développées</h4>
+              <div class="tags">
+                <span>DNS</span>
+                <span>Réseaux avancés</span>
+                <span>Filtrage réseau</span>
+                <span>Conteneurisation</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 3 : Supervision réseau -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon">MON</div>
+            <div class="project-title-block">
+              <h3>Supervision réseau avec PRTG & Zabbix</h3>
+              <span class="project-status">Production</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4>Objectif du projet</h4>
+              <p>Mettre en place une solution de supervision complète pour monitorer l'infrastructure réseau, les serveurs et les services. Création de dashboards personnalisés et alertes automatisées pour détecter rapidement les problèmes.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Description</h4>
+              <p>Déploiement de deux solutions de monitoring complémentaires :</p>
+              <ul class="project-list">
+                <li><strong>PRTG Network Monitor :</strong> Supervision serveurs Windows/Linux, switchs, services réseau</li>
+                <li><strong>Zabbix :</strong> Monitoring avancé avec agents, logs, métriques système</li>
+                <li>Configuration capteurs SNMP pour équipements réseau (switch L3, routeur)</li>
+                <li>Surveillance disques, CPU, RAM, bande passante</li>
+                <li>Alertes email/SMS en cas de seuil dépassé</li>
+                <li>Dashboards temps réel pour visualisation globale</li>
+                <li>Historisation des données pour analyse</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4>Technologies utilisées</h4>
+              <div class="tech-grid">
+                <span class="tech-badge">Zabbix</span>
+                <span class="tech-badge">PRTG</span>
+                <span class="tech-badge">SNMP</span>
+                <span class="tech-badge">Agents</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">PHP</span>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <h4>Compétences développées</h4>
+              <div class="tags">
+                <span>Supervision</span>
+                <span>SNMP</span>
+                <span>Alerting</span>
+                <span>Dashboards</span>
+                <span>Métriques</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 4 : Serveur LAMP + Proxy -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon">SRV</div>
+            <div class="project-title-block">
+              <h3>Serveur LAMP avec Proxy Squid</h3>
+              <span class="project-status">Production</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4>Objectif du projet</h4>
+              <p>Déployer une infrastructure web complète sur Debian avec stack LAMP (Linux, Apache, MySQL, PHP) pour héberger des applications web, couplée à un proxy Squid pour le contrôle et la journalisation du trafic HTTP/HTTPS.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Description</h4>
+              <p>Installation et configuration d'un serveur web sécurisé avec proxy :</p>
+              <ul class="project-list">
+                <li><strong>Stack LAMP :</strong> Apache2, MySQL/MariaDB, PHP 8.x, phpMyAdmin</li>
+                <li>Configuration VirtualHosts Apache pour multi-sites</li>
+                <li>Sécurisation Apache (mod_security, SSL/TLS)</li>
+                <li><strong>Proxy Squid :</strong> Filtrage web, cache HTTP, contrôle d'accès</li>
+                <li>Journalisation centralisée avec rsyslog</li>
+                <li>Analyse logs avec logwatch</li>
+                <li>Sauvegarde automatisée des bases de données</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4>Technologies utilisées</h4>
+              <div class="tech-grid">
+                <span class="tech-badge">Apache</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">Squid</span>
+                <span class="tech-badge">rsyslog</span>
+                <span class="tech-badge">Debian</span>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <h4>Compétences développées</h4>
+              <div class="tags">
+                <span>Apache</span>
+                <span>Bases de données</span>
+                <span>Proxy</span>
+                <span>Journalisation</span>
+                <span>Sécurisation</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 — Boubacar Coulibaly</p>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <a href="projet.html">Projets</a>
+        <a href="stage.html">Stage</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

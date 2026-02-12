@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boubacar Coulibaly | Portfolio</title>
+  <meta name="description" content="Portfolio de Boubacar Coulibaly — BTS SIO SISR (Systèmes, Réseaux, Cybersécurité)." />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV (glass, Apple-like) -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <span class="brand-mark">BC</span>
+        <span class="brand-text">Boubacar Coulibaly</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav-link is-active" href="index.html">Accueil</a>
+        <a class="nav-link" href="projet.html">Projets</a>
+        <a class="nav-link" href="tableau de competances.html">Compétences</a>
+        <a class="nav-link" href="stage.html">Stage</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="contact.html">Travaillons ensemble</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="kicker">BTS SIO • Option SISR</p>
+
+          <h1 class="hero-title">
+            Infrastructure.<br />
+            Réseaux.<br />
+            <span class="accent">Cybersécurité.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Je conçois, déploie et sécurise des environnements Linux & réseau.
+            Je vise du concret : services, supervision, segmentation, et bonnes pratiques.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projet.html">Voir mes projets</a>
+            <a class="btn btn-ghost" href="tableau de competances.html">Mes compétences</a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="badge">Debian • LAMP</div>
+            <div class="badge">Docker • Compose</div>
+            <div class="badge">Zabbix • PRTG</div>
+            <div class="badge">VLAN • Cisco</div>
+            <div class="badge">Active Directory</div>
+            <div class="badge">FreeRADIUS</div>
+            <div class="badge">Fail2Ban</div>
+            <div class="badge">VMware • Proxmox</div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-head">
+            <div class="dot"></div>
+            <p class="panel-status">Disponible alternance / stage</p>
+          </div>
+
+          <div class="panel-body">
+            <div class="row">
+              <span class="label">Nom</span>
+              <span class="value">Boubacar Coulibaly</span>
+            </div>
+            <div class="row">
+              <span class="label">Spécialité</span>
+              <span class="value">SISR (Infra • Réseau)</span>
+            </div>
+            <div class="row">
+              <span class="label">Orientation</span>
+              <span class="value">Cybersécurité</span>
+            </div>
+            <div class="row">
+              <span class="label">Ville</span>
+              <span class="value">Lyon</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <a class="panel-link" href="projet.html">
+              <span>Découvrir mes projets</span>
+              <span class="arrow">→</span>
+            </a>
+            <a class="panel-link" href="contact.html">
+              <span>Me contacter</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STORY (iPhone sticky center + fade) -->
+    <section class="story" id="story">
+      <div class="container story-head">
+        <p class="kicker">Qui je suis</p>
+        <h2 class="section-title">Un profil “terrain”, pensé pour la prod.</h2>
+        <p class="section-subtitle">
+          Je construis des environnements complets, je documente, et je sécurise. L’objectif : que ce soit clean.
+        </p>
+      </div>
+
+      <div class="story-stage container">
+        <!-- Left scroll text -->
+        <div class="story-text">
+          <article class="step is-active" data-step="0">
+            <h3>Étudiant BTS SIO SISR</h3>
+            <p>
+              Spécialisé en administration systèmes Linux/Windows, réseaux Cisco, et cybersécurité.
+              Compétences pratiques : LAMP, Docker, VLAN, supervision Zabbix/PRTG, Active Directory.
+            </p>
+            <div class="tags">
+              <span>Linux</span><span>Cisco</span><span>Cybersécurité</span>
+            </div>
+          </article>
+
+          <article class="step" data-step="1">
+            <h3>Projets infrastructure complets</h3>
+            <p>
+              Homelab Proxmox, serveur LAMP, Docker Compose (Pi-hole, Nginx), réseau Macvlan,
+              segmentation VLAN, bastion SSH. Tout documenté et reproductible.
+            </p>
+            <div class="tags">
+              <span>Homelab</span><span>Docker</span><span>VLAN</span>
+            </div>
+          </article>
+
+          <article class="step" data-step="2">
+            <h3>Sécurité & Supervision</h3>
+            <p>
+              Fail2Ban, FreeRADIUS, journalisation centralisée rsyslog, surveillance Zabbix/PRTG,
+              dashboards personnalisés, analyse logs, hardening système.
+            </p>
+            <div class="tags">
+              <span>Zabbix</span><span>Fail2Ban</span><span>RADIUS</span>
+            </div>
+          </article>
+
+          <article class="step" data-step="3">
+            <h3>Expérience en stage</h3>
+            <p>
+              GLPI (mise à jour, synchro BDD), maintenance parc, support utilisateurs,
+              documentation technique. Autonome, rigoureux, apprentissage rapide.
+            </p>
+            <div class="tags">
+              <span>GLPI</span><span>Support</span><span>Documentation</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Center phone -->
+        <div class="phone-wrap" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-notch"></div>
+
+            <div class="phone-screen">
+
+              <div class="screen-slide is-active" data-slide="0">
+                <div class="screen-kicker">Profil</div>
+                <div class="screen-title">Boubacar Coulibaly</div>
+                <div class="screen-text">BTS SIO SISR — Systèmes • Réseaux • Cybersécurité</div>
+
+                <div class="screen-grid">
+                  <div class="tile">
+                    <div class="tile-top">Base</div>
+                    <div class="tile-main">Debian</div>
+                    <div class="tile-sub">Linux / Services</div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-top">Réseau</div>
+                    <div class="tile-main">VLAN</div>
+                    <div class="tile-sub">Cisco / Switch</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="screen-slide" data-slide="1">
+                <div class="screen-kicker">Build</div>
+                <div class="screen-title">Stack & projets</div>
+                <div class="screen-text">Je monte des environnements complets et cohérents.</div>
+
+                <div class="screen-grid">
+                  <div class="tile">
+                    <div class="tile-top">Docker</div>
+                    <div class="tile-main">Compose</div>
+                    <div class="tile-sub">Services</div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-top">Web</div>
+                    <div class="tile-main">Proxy</div>
+                    <div class="tile-sub">HTTPS / Reverse</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="screen-slide" data-slide="2">
+                <div class="screen-kicker">Security</div>
+                <div class="screen-title">Robustesse</div>
+                <div class="screen-text">Durcissement + logs + accès : le trio qui sauve.</div>
+
+                <div class="screen-grid">
+                  <div class="tile">
+                    <div class="tile-top">Contrôle</div>
+                    <div class="tile-main">Accès</div>
+                    <div class="tile-sub">Moindre privilège</div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-top">Supervision</div>
+                    <div class="tile-main">Alertes</div>
+                    <div class="tile-sub">Zabbix / PRTG</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="screen-slide" data-slide="3">
+                <div class="screen-kicker">Next</div>
+                <div class="screen-title">Alternance</div>
+                <div class="screen-text">Je veux apprendre vite et livrer proprement.</div>
+
+                <div class="screen-grid">
+                  <div class="tile">
+                    <div class="tile-top">Qualité</div>
+                    <div class="tile-main">Doc</div>
+                    <div class="tile-sub">Méthode</div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-top">Run</div>
+                    <div class="tile-main">Fiable</div>
+                    <div class="tile-sub">Prod-ready</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right spacer (for perfect centering) -->
+        <div class="story-spacer" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
+      <div class="container">
+        <h2 class="section-title">Ce que je fais</h2>
+        <p class="section-subtitle">
+          Des projets orientés production : clarté, sécurité, documentation.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-icon">SYS</div>
+              <h3>Administration Systèmes</h3>
+            </div>
+            <p>Installation Debian, serveur LAMP (Apache, MySQL, PHP, phpMyAdmin), Active Directory, DNS/DHCP. Configuration Apache, gestion MySQL, proxy Squid, journalisation rsyslog.</p>
+            <div class="tags">
+              <span>Linux</span>
+              <span>Windows Server</span>
+              <span>LAMP</span>
+              <span>AD</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-header">
+              <div class="card-icon">NET</div>
+              <h3>Réseaux & Infrastructure</h3>
+            </div>
+            <p>Configuration équipements Cisco (Switch 2960, Routeur 1941), VLAN, routage inter-VLAN, SNMP, OSPF, SSH sécurisé, FreeRADIUS, bastion SSH.</p>
+            <div class="tags">
+              <span>Cisco</span>
+              <span>VLAN</span>
+              <span>RADIUS</span>
+              <span>OSPF</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-header">
+              <div class="card-icon">SEC</div>
+              <h3>Cybersécurité & Supervision</h3>
+            </div>
+            <p>Zabbix (serveurs, logs, switchs L3, alertes), PRTG (capteurs SNMP, supervision infrastructure), Fail2Ban, authentification RADIUS, analyse logs, hardening.</p>
+            <div class="tags">
+              <span>Zabbix</span>
+              <span>PRTG</span>
+              <span>Fail2Ban</span>
+              <span>Logs</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-header">
+              <div class="card-icon">DEV</div>
+              <h3>Conteneurisation & DevOps</h3>
+            </div>
+            <p>Docker sur Debian & NAS, création Dockerfile, Docker Compose, réseau Macvlan, Pi-hole, reverse proxy Nginx, gestion permissions PUID/PGID.</p>
+            <div class="tags">
+              <span>Docker</span>
+              <span>Compose</span>
+              <span>Nginx</span>
+              <span>Pi-hole</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-header">
+              <div class="card-icon">VM</div>
+              <h3>Virtualisation & Homelab</h3>
+            </div>
+            <p>VMware ESXi, VirtualBox, Proxmox (homelab), gestion machines virtuelles (réseau, stockage, snapshots), environnement de test complet.</p>
+            <div class="tags">
+              <span>VMware</span>
+              <span>Proxmox</span>
+              <span>VirtualBox</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-header">
+              <div class="card-icon">SUP</div>
+              <h3>Support & Maintenance</h3>
+            </div>
+            <p>GLPI (mise à jour, synchronisation BDD, gestion parc), maintenance postes, support utilisateurs, documentation technique, suivi d'incidents.</p>
+            <div class="tags">
+              <span>GLPI</span>
+              <span>Support</span>
+              <span>Documentation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>On bosse ensemble ?</h2>
+          <p>Si tu veux un profil infra/réseau qui documente et sécurise : je suis chaud.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="contact.html">Me contacter</a>
+          <a class="btn btn-ghost" href="projet.html">Voir les projets</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/story.js" defer></script>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 — Boubacar Coulibaly</p>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <a href="projet.html">Projets</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

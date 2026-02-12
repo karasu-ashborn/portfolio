@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences | Boubacar Coulibaly</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f1eb;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        .competence-section {
+            margin-bottom: 40px;
+            border: 3px solid #a8cedf;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,.08);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #a8cedf 0%, #7db0c9 100%);
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .section-content {
+            padding: 20px;
+        }
+
+        .subsection {
+            margin-bottom: 25px;
+        }
+
+        .subsection-title {
+            color: #5a95b3;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .competence-list {
+            list-style: none;
+            padding-left: 35px;
+        }
+
+        .competence-list li {
+            padding: 8px 0;
+            position: relative;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .competence-list li::before {
+            content: "▸";
+            position: absolute;
+            left: -20px;
+            color: #7db0c9;
+            font-weight: bold;
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .section-header {
+                font-size: 1.2em;
+                padding: 15px;
+            }
+        }
+
+        .highlight {
+            background-color: #f0f4ff;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <span class="brand-mark">BC</span>
+        <span class="brand-text">Boubacar Coulibaly</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav-link" href="index.html">Accueil</a>
+        <a class="nav-link" href="projet.html">Projets</a>
+        <a class="nav-link is-active" href="tableau de competances.html">Compétences</a>
+        <a class="nav-link" href="stage.html">Stage</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="contact.html">Travaillons ensemble</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+        <h1>Compétences acquises en BTS SIO SISR</h1>
+
+        <!-- Administration Systèmes -->
+        <div class="competence-section">
+            <div class="section-header">
+                Administration Systèmes (Linux / Windows)
+            </div>
+            <div class="section-content">
+                <div class="subsection">
+                    <div class="subsection-title">Installation & configuration</div>
+                    <ul class="competence-list">
+                        <li>Installation de Debian</li>
+                        <li>Mise en place d'un serveur LAMP (Apache, MySQL/MariaDB, PHP, phpMyAdmin)</li>
+                        <li>Configuration d'Active Directory</li>
+                        <li>Mise en place de DNS / DHCP</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Gestion des services</div>
+                    <ul class="competence-list">
+                        <li>Configuration Apache</li>
+                        <li>Gestion base de données MySQL</li>
+                        <li>Mise en place de serveurs proxy (Squid)</li>
+                        <li>Journalisation système (rsyslog)</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Virtualisation</div>
+                    <ul class="competence-list">
+                        <li>VMware ESXi</li>
+                        <li>VirtualBox</li>
+                        <li>Proxmox (homelab)</li>
+                        <li>Gestion de machines virtuelles (réseau, stockage, snapshots)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Réseaux & Infrastructure -->
+        <div class="competence-section">
+            <div class="section-header">
+                Réseaux & Infrastructure
+            </div>
+            <div class="section-content">
+                <div class="subsection">
+                    <div class="subsection-title">Configuration équipements Cisco</div>
+                    <ul class="competence-list">
+                        <li>Switch Cisco 2960</li>
+                        <li>Routeur Cisco 1941</li>
+                        <li>VLAN (ex : VLAN 207 dans contexte CUB)</li>
+                        <li>Routage inter-VLAN</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Protocoles & services réseau</div>
+                    <ul class="competence-list">
+                        <li>SNMP</li>
+                        <li>OSPF</li>
+                        <li>DNS</li>
+                        <li>DHCP</li>
+                        <li>SSH sécurisé</li>
+                        <li>RADIUS (FreeRADIUS)</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Segmentation & sécurité réseau</div>
+                    <ul class="competence-list">
+                        <li>Mise en place VLAN</li>
+                        <li>Bastion SSH</li>
+                        <li>Supervision logs</li>
+                        <li>Gestion des accès administrateurs via serveur RADIUS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cybersécurité -->
+        <div class="competence-section">
+            <div class="section-header">
+                Cybersécurité
+            </div>
+            <div class="section-content">
+                <div class="subsection">
+                    <div class="subsection-title">Supervision</div>
+                    <ul class="competence-list">
+                        <li>Zabbix (serveurs, logs, switchs L3, disques, alertes personnalisées)</li>
+                        <li>PRTG (capteurs SNMP, supervision LAMP, AD, DNS, DHCP)</li>
+                        <li>Création de dashboards</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Sécurisation</div>
+                    <ul class="competence-list">
+                        <li>Fail2Ban</li>
+                        <li>Authentification centralisée RADIUS</li>
+                        <li>Journalisation centralisée</li>
+                        <li>Gestion des droits d'accès</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Notions avancées</div>
+                    <ul class="competence-list">
+                        <li>Attaques MITM</li>
+                        <li>Analyse des logs</li>
+                        <li>Bonnes pratiques de sécurisation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteneurisation & DevOps -->
+        <div class="competence-section">
+            <div class="section-header">
+                Conteneurisation & DevOps
+            </div>
+            <div class="section-content">
+                <div class="subsection">
+                    <div class="subsection-title">Docker</div>
+                    <ul class="competence-list">
+                        <li>Installation Docker sur Debian & NAS</li>
+                        <li>Création de Dockerfile</li>
+                        <li>Utilisation volumes</li>
+                        <li>Docker Compose</li>
+                        <li>Réseau Macvlan</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Applications déployées</div>
+                    <ul class="competence-list">
+                        <li>Pi-hole (DNS filtering)</li>
+                        <li>Reverse proxy Nginx</li>
+                        <li>Homarr</li>
+                        <li>Dockhand</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Gestion des permissions</div>
+                    <ul class="competence-list">
+                        <li>PUID / PGID</li>
+                        <li>Gestion des droits Linux</li>
+                        <li>Sécurisation socket Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compétences acquises en stage -->
+        <div class="competence-section">
+            <div class="section-header">
+                Compétences acquises en stage
+            </div>
+            <div class="section-content">
+                <div class="subsection">
+                    <div class="subsection-title">Maintenance & Support</div>
+                    <ul class="competence-list">
+                        <li>Nettoyage disque machines clientes</li>
+                        <li>Mise à jour antivirus</li>
+                        <li>Maintenance postes utilisateurs</li>
+                        <li>Support utilisateurs</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">GLPI</div>
+                    <ul class="competence-list">
+                        <li>Mise à jour GLPI</li>
+                        <li>Synchronisation bases de données</li>
+                        <li>Gestion parc informatique</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Organisation & méthode</div>
+                    <ul class="competence-list">
+                        <li>Rédaction compte-rendu technique</li>
+                        <li>Documentation d'installation</li>
+                        <li>Suivi d'incidents</li>
+                        <li>Communication professionnelle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compétences transversales -->
+        <div class="competence-section">
+            <div class="section-header">
+                Compétences transversales
+            </div>
+            <div class="section-content">
+                <ul class="competence-list">
+                    <li>Analyse logique (maths + NSI)</li>
+                    <li>Résolution de problèmes</li>
+                    <li>Autonomie</li>
+                    <li>Capacité d'apprentissage rapide</li>
+                    <li>Travail en environnement technique complexe</li>
+                    <li>Veille technologique (Aladdin – IA financière BlackRock)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 — Boubacar Coulibaly</p>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <a href="projet.html">Projets</a>
+        <a href="stage.html">Stage</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

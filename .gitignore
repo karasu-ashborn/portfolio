@@ -1,0 +1,14 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de copie
+*Copie*
+*copy*
+
+# Dossiers IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
